@@ -1,0 +1,49 @@
+Nama : Kayla Nur Khosyatillah Sudza
+NIM : 2502026034
+Kelas : LA06
+Program yang dibuat : Aplikasi Sistem Informasi Sekolah Yang Menampilkan data serta Informasi Gaji yang akan didapatkan oleh Pegawainya
+
+Class:
+Abstrac Class :
+-	Pegawai (Abstrac class// nama, gender, noHP, status, codeID,alamat, email dan yang akan mengimpletasikan interface Gaji dan  menambahkan informasi tentang tambahan nomor pegawai dan gaji).
+-	Gaji (interface)
+-	Siswa ( conc extends Orang // super, kelas)
+-	Guru (conc extend Orang // super, Course, jam kerja)
+-	OB (conc extend Orang // super ,Room, jam kerja)
+-	Staff ( conc extend Orang // super ,education, jam kerja)
+-	Pedagang Kantin ( conc extend Orang // super, jenisMakanan, jam kerja)
+
+
+
+Feature:
+-	Add new member
+-	View All member
+-	View Gaji
+-	Delete
+-	Exit
+
+
+Validasi: 
+-	Name (length : minimal 5 char, maximal 20 char)
+-	Gender ( equals : “Male” and “Female”)
+-	Email (endswith : @gmail.com)
+-	noHP (length : harus 12 angka, isDigit: harus smua nya angka)
+-	Status (equals : “ Siswa “ , “ Guru “, “ Staff “ , “OB” , "Pedagang Kantin" )
+- 	Kelas (kelas < 10 || kelas > 10)
+-	room (room <= 15)
+-	education (equals : S1, D3 , D2)
+
+
+
+Action :
+-Random 6 angka (buat Kode kelasnya)
+	jika dia punya status "Siswa" -> Generate Id akan dimulai dengan S
+	jika dia punya status "Guru" -> Generate Id akan dimulai dengan G
+	jika dia punya status "Staff" -> Generate Id akan dimulai dengan F
+	jika dia punya status "OB" -> Generate Id akan dimulai dengan O
+	jika dia punya status "Pedagang" -> Generate Id akan dimulai dengan P
+	
+-View all attribute, add, delete
+-Show empty message
+-Jumlah gaji tergantung pada banyaknya jam kerja yang dia punya
+-Jam kerja sangat berpengaruh terhadap points yang akan didapatkan.
